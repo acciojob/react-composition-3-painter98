@@ -1,18 +1,18 @@
-.tooltip{
+.tooltiptext{
     background-color: red;
     color:white;
     display:none;
 }
-body{
+body,h1{
     margin:0;
 }
-.tooltiptext{
+.tooltip{
     margin-top:100px;
     border-bottom: 1px dotted black;
     position: relative;
 }
 
-.tooltiptext:hover > div,.tooltiptext:hover > span{
+.tooltip:hover > div{
     display: block; display:block;
     position: absolute;
     left:5vw;
@@ -20,6 +20,6 @@ body{
     border-radius: 2vw;
     margin:0;
     text-align: center;
-    width:100px;
+    width:150px;
     top:-100px;
 }
