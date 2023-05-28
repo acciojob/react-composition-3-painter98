@@ -3,33 +3,23 @@
     color:white;
     display:none;
 }
-body,h1{
+body{
     margin:0;
-}
-.container{
-    position: relative;
 }
 .tooltip{
     margin-top:100px;
     border-bottom: 1px dotted black;
+    position: relative;
 }
 
-.tooltip:hover ~ #tool1{
-    width:150px;
-    top:-100px;
-}
-
-#text2:hover ~ #tool2{
-    width:100px;
-    top:75px;
-}
-
-#text2:hover ~ #tool2,.tooltip:hover ~ #tool1{
-    display:block;
+.tooltip:hover > div{
+    display: block; display:block;
     position: absolute;
     left:5vw;
     padding:2vw;
     border-radius: 2vw;
     margin:0;
     text-align: center;
+    width:100px;
+    top:-100px;
 }

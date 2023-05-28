@@ -3,10 +3,12 @@ import './Tooltip.css';
 
 function Tooltip({text1,text2}){
     return <div className='container'>
-        <h1 className="tooltip">Hover over me</h1>
-        <h1 className='tooltiptext' id="tool1">{text1}</h1>
-        <p className="tooltip" id="text2">Hover over me to see another tooltip</p>
-        <p className="tooltiptext" id="tool2">{text2}</p>
+        <h2 className="tooltip">Hover over me
+            <div className='tooltiptext'>{text1}</div>
+        </h2>
+        <p className="tooltip">Hover over me to see another tooltip
+            <div className="tooltiptext" >{text2}</div>
+        </p>
     </div>
 }
 
