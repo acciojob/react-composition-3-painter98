@@ -18,7 +18,7 @@ function Tooltip(props){
       onMouseLeave={() => setShowTooltip(false)}
     >
       {props.children}
-      {showTooltip && <div className="tooltiptext">{props.text}</div>}
+      {showTooltip && <div className="tooltip">{props.text}</div>}
     </div>
   );
 };
