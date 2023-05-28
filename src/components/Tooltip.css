@@ -1,4 +1,4 @@
-.tooltiptext{
+.tooltip{
     background-color: red;
     color:white;
     display:none;
@@ -6,13 +6,13 @@
 body{
     margin:0;
 }
-.tooltip{
+.tooltiptext{
     margin-top:100px;
     border-bottom: 1px dotted black;
     position: relative;
 }
 
-.tooltip:hover > div{
+.tooltiptext:hover > div,.tooltiptext:hover > span{
     display: block; display:block;
     position: absolute;
     left:5vw;
